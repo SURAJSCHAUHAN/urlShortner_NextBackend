@@ -55,7 +55,7 @@ const page = () => {
   }
 
   return (
-    <div className='flex flex-col w-[100vw] h-[100%] bg-gray-200'>
+    <div className='flex flex-col w-[100vw] h-[100%] bg-gray-200 pb-[62vh]'>
       <div className='flex flex-col justify-center items-center w-full gap-5 mt-[20vh]'>
         <input type="text" className='rounded-md px-20 py-3 border-2 border-gray-600 text-center' placeholder='Enter Your URL' value={urldata} onChange={handleChange}/>
         <div>
