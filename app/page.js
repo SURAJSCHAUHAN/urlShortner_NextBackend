@@ -65,12 +65,12 @@ const page = () => {
       </div>
       {data.id && 
         <div className='flex justify-center mt-[20vh] text-blue-400 text-xl font-semibold '>
-          <Link href={`http://localhost:3000/api/urls/${data.id}`} target='_blank' onClick={()=>handleLink(data.id)}><h1>{`http://localhost:3000/api/urls/${data.id}`}</h1></Link>
+          <Link href={`https://urlshortnersuraj.vercel.app/api/urls/${data.id}`} target='_blank' onClick={()=>handleLink(data.id)}><h1>{`https://urlshortnersuraj.vercel.app/api/urls/${data.id}`}</h1></Link>
         </div>
       }
       {analysis.totalClicks && 
         <div className='flex flex-col gap-5 justify-center text-center mt-[20vh] text-blue-400 text-xl font-semibold '>
-          <Link href={`http://localhost:3000/api/urls/${analysis.shortId}`} target='_blank' onClick={()=>handleLink(data.id)}><h1>{`http://localhost:3000/api/urls/${analysis.shortId}`}</h1></Link>
+          <Link href={`https://urlshortnersuraj.vercel.app/urls/${analysis.shortId}`} target='_blank' onClick={()=>handleLink(data.id)}><h1>{`https://urlshortnersuraj.vercel.app/api/urls/${analysis.shortId}`}</h1></Link>
           <h1>Total Clicks: {analysis.totalClicks}</h1>
           {
             analysis.analytics && analysis.analytics.map(time=>(
